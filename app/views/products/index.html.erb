@@ -1,0 +1,18 @@
+<p style="color: green"><%= notice %></p>
+
+<h1 style="text-align: center;">Products</h1>
+
+<div id="products" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+  <% @products.each do |product| %>
+    <div style="margin: 10px; text-align: center;">
+      <%= render product %>
+      <p>
+        <%= link_to "Show this product", product %>
+      </p>
+    </div>
+  <% end %>
+</div>
+
+<div class="text-center">
+  <%= link_to "New product", new_product_path %>
+</div>
