@@ -14,4 +14,8 @@
     <%= product.total_quantity %>
   </p>
 
+  <p>
+    <%= button_to "Buy this", checkout_create_path, params: {id: product.id}, remote: true %>
+  </p>
+
 </div>

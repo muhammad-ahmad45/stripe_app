@@ -77,3 +77,5 @@ end
 gem "devise", "~> 4.9"
 
 gem 'stripe'
+
+gem "byebug", "~> 11.1"
